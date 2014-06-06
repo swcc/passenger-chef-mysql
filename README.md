@@ -9,11 +9,9 @@ To use, build the Docker container or pull it from the index (`docker pull swcc/
 cd /path/to/repo/passenger-chef-mysql
 docker build -t passenger-chef-mysql .    # Build a Docker image named "passenger-chef-mysql" from this location "."
 # wait for it to build...
+```
 
-# Run the docker container
-
-
-
+### Run the docker container
 _Give container a name in case it's linked to another app container_
 ```
 docker run -p 80:80 -d passenger-chef-mysql -v /my/app:/home/app /sbin/my_init --enable-insecure-key
