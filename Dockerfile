@@ -1,4 +1,4 @@
-FROM phusion/passenger-chef:latest
+FROM swcc/passenger-chef:latest
 # Set correct environment variables.
 ENV HOME /root
 
